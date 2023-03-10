@@ -1,29 +1,28 @@
 export const theme = {
   colors: {
-    primary: "rgba(0, 0, 0, 0.87)",
-    secondary: "rgba(0, 0, 0, 0.6)",
-    icon: "rgba(0, 0, 0, 0.54)",
-    borderIcon: "rgba(0, 0, 0, 0.5)",
-    backgroundImage: "rgba(196, 196, 196, 1)",
-    white: "rgba(255, 255, 255, 1)",
-    black: "rgba(0, 0, 0, 1)",
-    gray: "rgba(142, 142, 147, 1)",
-    divider: "rgba(33, 33, 33, 0.08)",
-    subtext: "rgba(110, 121, 140, 1)",
-    subtitle: "rgba(8, 31, 50, 1)",
+    primary: 'rgba(0, 0, 0, 0.87)',
+    secondary: 'rgba(0, 0, 0, 0.6)',
+    icon: 'rgba(0, 0, 0, 0.54)',
+    primaryBorder: 'rgba(0, 0, 0, 0.5)',
+    backgroundImage: 'rgba(196, 196, 196, 1)',
+    white: 'rgba(255, 255, 255, 1)',
+    black: 'rgba(0, 0, 0, 1)',
+    gray: 'rgba(142, 142, 147, 1)',
+    divider: 'rgba(33, 33, 33, 0.08)',
+    subtext: 'rgba(110, 121, 140, 1)',
+    subtitle: 'rgba(8, 31, 50, 1)',
   },
-  space: ["auto", 0, 4, 8, 12, 16, 20],
+  space: ['auto', 0, 4, 8, 12, 16, 20, 24],
   fonts: {
-    //   body: 'system-ui, sans-serif',
-    //   heading: 'system-ui, sans-serif',
-    //   monospace: 'Menlo, monospace',
+    roboto: "'Roboto', sans-serif",
+    karla: "'Karla', sans-serif",
   },
   fontSizes: {
-    xs: "12px",
-    s: "14px",
-    m: "16px",
-    l: "18px",
-    xl: "20px",
+    xs: '12px',
+    s: '14px',
+    m: '16px',
+    l: '18px',
+    xl: '20px',
   },
   fontWeights: {
     normal: 400,
@@ -36,20 +35,21 @@ export const theme = {
     qwerty: 1.43,
     secondary: 1.17,
   },
+  letterSpacing: {
+    primary: 0.15,
+    secondary: 0.25,
+  },
   borders: {
-    none: "none",
-    normal: "1px solid",
+    none: 'none',
+    normal: '1px solid',
   },
   radii: {
-    none: "0",
-    normal: "4px",
-    awesome: "8px",
-    round: "50%",
+    none: '0',
+    secondary: '4px',
+    primary: '8px',
+    round: '50%',
   },
 };
-
-// letter-spacing: 0.15px
-// letter-spacing: 0.25px
 
 // box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
 // Roboto, font-family: Karla 700
