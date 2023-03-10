@@ -7,6 +7,7 @@ export const StyledList = styled.ul`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%;
 `;
 
 export const StyledItem = styled.li`
@@ -14,8 +15,7 @@ export const StyledItem = styled.li`
   flex-direction: column;
   margin-bottom: ${props => props.theme.space[7]}px;
   border-radius: ${props => props.theme.radii.secondary};
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12),
-    0px 2px 4px rgba(0, 0, 0, 0.14);
+  box-shadow: ${props => props.theme.boxShadow.primary};
   overflow: hidden;
   max-width: 240px;
   cursor: pointer;

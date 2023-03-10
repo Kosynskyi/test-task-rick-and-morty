@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { Wrapper, StyledSearchIcon, StyledInput } from './Filter.styled';
 
 const Filter = () => {
-  const [filter, setFilter] = useState('');
+  const [searchParams, setSearchParams] = useSearchParams();
+  const query = searchParams.get('query') ?? '';
 
   const handleChange = ({ target: { value } }) => {
-    console.log(filter);
-    setFilter(value);
+    setSearchParams(value !== '' ? { query: value } : {});
   };
 
   return (
@@ -16,7 +17,7 @@ const Filter = () => {
         type="search"
         name="filter"
         placeholder="Filter by name..."
-        value={filter}
+        value={query}
         onChange={handleChange}
       />
     </Wrapper>
