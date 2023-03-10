@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Box } from 'utils/Box';
 import HomePage from 'pages/HomePage';
 import CharacterDetails from 'pages/CharacterDetails';
+import BackToTop from 'components/BackToTop';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/character" element={<CharacterDetails />} />
       </Routes>
+      <BackToTop />
     </Box>
   );
 }
