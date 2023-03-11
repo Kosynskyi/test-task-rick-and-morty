@@ -2,11 +2,6 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const StyledBackHome = styled(Link)`
-  /* display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; */
-  /* color: ${p => p.theme.colors.white}; */
   & > svg {
     position: relative;
     top: 3px;
@@ -16,7 +11,6 @@ export const StyledBackHome = styled(Link)`
   }
   &:hover > svg {
     transform: scale(1.05);
-    /* color: ${p => p.theme.colors.red}; */
   }
 `;
 
