@@ -1,6 +1,6 @@
 export const size = {
-  mobile: '360px',
-  desktop: '1020px',
+  mobile: '368px',
+  desktop: '1440px',
 };
 
 export const breakpoints = {

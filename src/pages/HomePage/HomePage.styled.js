@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
     width: 100%;
   }
 
-  @media ${breakpoints.desktop} {
+  /* @media ${breakpoints.desktop} {
     width: 1020px;
-  }
+  } */
 `;

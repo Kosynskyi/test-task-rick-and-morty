@@ -1,18 +1,17 @@
 import { useLocation } from 'react-router-dom';
 import { ReactComponent as GoBackIcon } from 'assets/arrow_back.svg';
-import { Box } from 'utils/Box';
-import { GoBackLink, GoBackText } from './GoBack.styled';
+import { GoBackLink, GoBackText, Wrapper } from './GoBack.styled';
 
 const GoBack = () => {
   const location = useLocation();
   const backLinkHref = location.state?.from ?? '/';
 
   return (
-    <Box display="flex" justifyContent="flex-start" alignItems="center">
+    <Wrapper>
       <GoBackLink to={backLinkHref}>
         <GoBackIcon /> <GoBackText>go back</GoBackText>
       </GoBackLink>
-    </Box>
+    </Wrapper>
   );
 };
 

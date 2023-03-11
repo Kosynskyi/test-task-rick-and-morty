@@ -11,6 +11,7 @@ export const theme = {
     divider: 'rgba(33, 33, 33, 0.08)',
     subtext: 'rgba(110, 121, 140, 1)',
     title: 'rgba(8, 31, 50, 1)',
+    borderImageDetails: 'rgba(242, 242, 247, 1)',
   },
   space: ['auto', 0, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48],
   fonts: {
@@ -36,6 +37,7 @@ export const theme = {
     extra: 1.43,
     additional: 1.2,
     secondary: 1.17,
+    mobile: 1.15,
   },
   letterSpacing: {
     primary: 0.15,
@@ -44,6 +46,7 @@ export const theme = {
   borders: {
     none: 'none',
     normal: '1px solid',
+    large: '5px solid',
   },
   radii: {
     none: '0',

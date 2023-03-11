@@ -1,13 +1,13 @@
 import CharacterDetails from 'components/CharacterDetails';
 import GoBack from 'components/GoBack';
-import { Box } from 'utils/Box';
+import { Wrapper } from './CharacterDetailsPage.styled';
 
 const CharacterDetailsPage = () => {
   return (
-    <Box pt="23px" px="50px" pb="142px">
+    <Wrapper>
       <GoBack />
       <CharacterDetails />
-    </Box>
+    </Wrapper>
   );
 };
 
