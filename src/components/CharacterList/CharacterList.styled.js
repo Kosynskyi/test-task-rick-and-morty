@@ -17,7 +17,7 @@ export const StyledList = styled.ul`
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: ${props => props.theme.space[6]}px;
     grid-row-gap: ${props => props.theme.space[7]}px;
-    width: 100%;
+    width: 1020px;
   }
 `;
 

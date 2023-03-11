@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { Provider } from 'react-redux';
-// import
 import './index.css';
 import App from './App';
 import { store } from 'redux/store';
@@ -13,12 +12,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <ThemeProvider theme={theme}>
-        <BrowserRouter basename="/test-task-rick-and-morty">
+    <BrowserRouter basename="/test-task-rick-and-morty">
+      <Provider store={store}>
+        <ThemeProvider theme={theme}>
           <App />
-        </BrowserRouter>
-      </ThemeProvider>
-    </Provider>
+        </ThemeProvider>
+      </Provider>
+    </BrowserRouter>
   </React.StrictMode>
 );
