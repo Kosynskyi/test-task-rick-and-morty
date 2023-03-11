@@ -27,7 +27,7 @@ const BackToTop = () => {
     <>
       {backToTop && (
         <BackToTopButton onClick={scrollToTop}>
-          <MdArrowUpward color="#e50914" size={25} />
+          <MdArrowUpward color="#57b846" size={25} />
         </BackToTopButton>
       )}
     </>

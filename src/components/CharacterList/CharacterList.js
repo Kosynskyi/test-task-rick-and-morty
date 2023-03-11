@@ -21,9 +21,10 @@ const CharacterList = () => {
   const [searchParams] = useSearchParams();
   const query = searchParams.get('query') ?? '';
 
+  // eslint-disable-next-line
   const { data, error, isLoading } = useGetCharacterByNameQuery(query);
   // console.log('data in list', data?.results);
-  console.log('isLoading', isLoading);
+  // console.log('error', error);
 
   useEffect(() => {
     if (data) {
