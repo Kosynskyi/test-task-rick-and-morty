@@ -2,18 +2,17 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const StyledList = styled.ul`
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 24px;
   width: 100%;
 `;
 
 export const StyledItem = styled.li`
   display: flex;
   flex-direction: column;
-  margin-bottom: ${props => props.theme.space[7]}px;
   border-radius: ${props => props.theme.radii.secondary};
   box-shadow: ${props => props.theme.boxShadow.primary};
   overflow: hidden;
@@ -23,10 +22,6 @@ export const StyledItem = styled.li`
 
   &:hover {
     transform: scale(1.05);
-  }
-
-  &:nth-last-child(-n + 4) {
-    margin-bottom: ${props => props.theme.space[1]}px;
   }
 `;
 
