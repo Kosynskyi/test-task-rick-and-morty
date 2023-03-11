@@ -51,8 +51,8 @@ const CharacterList = () => {
                     to={`/character/${id}`}
                     state={{ from: location }}
                   >
-                    <img src={image} alt={name} width="240" />
-                    <Box display="flex" flexDirection="column" m={5}>
+                    <img src={image} alt={name} width="312px" />
+                    <Box display="flex" flexDirection="column" px={5} py={4}>
                       <CharacterName>{name}</CharacterName>
                       <Species>{species}</Species>
                     </Box>

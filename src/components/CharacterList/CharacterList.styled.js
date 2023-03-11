@@ -1,27 +1,44 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { breakpoints } from 'services/mixins/mixins';
 
 export const StyledList = styled.ul`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 24px;
-  width: 100%;
+  @media ${breakpoints.mobile} {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-row-gap: ${props => props.theme.space[9]}px;
+    width: 312px;
+  }
+
+  @media ${breakpoints.desktop} {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: ${props => props.theme.space[6]}px;
+    grid-row-gap: ${props => props.theme.space[7]}px;
+    width: 100%;
+  }
 `;
 
 export const StyledItem = styled.li`
-  display: flex;
-  flex-direction: column;
-  border-radius: ${props => props.theme.radii.secondary};
-  box-shadow: ${props => props.theme.boxShadow.primary};
-  overflow: hidden;
-  max-width: 240px;
-  cursor: pointer;
-  transition: 500ms;
+  @media ${breakpoints.mobile} {
+    display: flex;
+    flex-direction: column;
+    border-radius: ${props => props.theme.radii.secondary};
+    box-shadow: ${props => props.theme.boxShadow.primary};
+    overflow: hidden;
+    width: 312px;
+    cursor: pointer;
+    transition: 500ms;
+  }
 
-  &:hover {
-    transform: scale(1.05);
+  @media ${breakpoints.desktop} {
+    width: 240px;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 `;
 

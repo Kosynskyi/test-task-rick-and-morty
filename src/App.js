@@ -1,21 +1,22 @@
 import { Routes, Route } from 'react-router-dom';
-import { Box } from 'utils/Box';
+// import { Box } from 'utils/Box';
 import HomePage from 'pages/HomePage';
 import CharacterDetailsPage from 'pages/CharacterDetailsPage';
 import BackToTop from 'components/BackToTop';
 import NotFoundPage from 'pages/NotFoundPage';
+import { Wrapper } from 'App.styled';
 
 function App() {
   return (
-    <Box
-      p={1}
-      display="flex"
-      flexDirection="column"
-      justifyContent="center"
-      alignItems="center"
-      maxWidth="1020px"
-      marginLeft={0}
-      marginRight={0}
+    <Wrapper
+    // p={1}
+    // display="flex"
+    // flexDirection="column"
+    // justifyContent="center"
+    // alignItems="center"
+    // maxWidth="1020px"
+    // marginLeft={0}
+    // marginRight={0}
     >
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -23,7 +24,7 @@ function App() {
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <BackToTop />
-    </Box>
+    </Wrapper>
   );
 }
 
