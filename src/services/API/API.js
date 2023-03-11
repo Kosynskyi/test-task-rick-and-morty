@@ -20,4 +20,14 @@ export const getCharacterByName = async (name, page = 1) => {
   }
 };
 
+export const getCharacterInfo = async id => {
+  try {
+    const { data } = await axios(`/character/${id}`);
+    console.log('data', data);
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
 // : "https://rickandmortyapi.com/api/character/?page=2&name=${name}",

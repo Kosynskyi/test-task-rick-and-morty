@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useLocation, useSearchParams } from 'react-router-dom';
 import { Box } from 'utils/Box';
 import { sortedCharactersByName } from 'helpers/sortedCharacters';
-import { BASE_URL } from 'helpers/constans';
+// import { BASE_URL } from 'helpers/constans';
 import { getAllCharters } from 'services/API/API';
 import { useGetCharacterByNameQuery } from 'redux/characterSlice';
 
@@ -47,7 +47,8 @@ const CharacterList = () => {
               ({ id, name, image, species }) => (
                 <StyledItem key={id}>
                   <StyledLink
-                    to={`${BASE_URL}${id}`}
+                    // to={`${BASE_URL}${id}`}
+                    to={`/character/${id}`}
                     state={{ from: location }}
                   >
                     <img src={image} alt={name} width="240" />

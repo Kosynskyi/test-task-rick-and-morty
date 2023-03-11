@@ -10,9 +10,9 @@ export const theme = {
     gray: 'rgba(142, 142, 147, 1)',
     divider: 'rgba(33, 33, 33, 0.08)',
     subtext: 'rgba(110, 121, 140, 1)',
-    subtitle: 'rgba(8, 31, 50, 1)',
+    title: 'rgba(8, 31, 50, 1)',
   },
-  space: ['auto', 0, 4, 8, 12, 16, 20, 24, 28, 32],
+  space: ['auto', 0, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48],
   fonts: {
     roboto: "'Roboto', sans-serif",
     karla: "'Karla', sans-serif",
@@ -24,6 +24,7 @@ export const theme = {
     l: '18px',
     xl: '20px',
     xxl: '32px',
+    xxxl: '48px',
   },
   fontWeights: {
     normal: 400,
@@ -32,8 +33,8 @@ export const theme = {
   },
   lineHeights: {
     primary: 1.5,
-    // qwe: 1.2,
-    // qwerty: 1.43,
+    extra: 1.43,
+    additional: 1.2,
     secondary: 1.17,
   },
   letterSpacing: {
