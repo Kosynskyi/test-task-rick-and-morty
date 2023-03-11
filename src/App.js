@@ -3,6 +3,7 @@ import { Box } from 'utils/Box';
 import HomePage from 'pages/HomePage';
 import CharacterDetails from 'pages/CharacterDetails';
 import BackToTop from 'components/BackToTop';
+import NotFoundPage from 'pages/NotFoundPage';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/character" element={<CharacterDetails />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <BackToTop />
     </Box>

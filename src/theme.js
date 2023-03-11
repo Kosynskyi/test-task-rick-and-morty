@@ -12,7 +12,7 @@ export const theme = {
     subtext: 'rgba(110, 121, 140, 1)',
     subtitle: 'rgba(8, 31, 50, 1)',
   },
-  space: ['auto', 0, 4, 8, 12, 16, 20, 24],
+  space: ['auto', 0, 4, 8, 12, 16, 20, 24, 28, 32],
   fonts: {
     roboto: "'Roboto', sans-serif",
     karla: "'Karla', sans-serif",
@@ -31,8 +31,8 @@ export const theme = {
   },
   lineHeights: {
     primary: 1.5,
-    qwe: 1.2,
-    qwerty: 1.43,
+    // qwe: 1.2,
+    // qwerty: 1.43,
     secondary: 1.17,
   },
   letterSpacing: {
