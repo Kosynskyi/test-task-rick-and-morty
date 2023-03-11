@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/test-task-rick-and-morty/static/css/main.2d32976d.css",
+    "main.js": "/test-task-rick-and-morty/static/js/main.7fe3e86c.js",
+    "static/media/logo_1x.png": "/test-task-rick-and-morty/static/media/logo_1x.7025a60a8397a5bdc91d.png",
+    "index.html": "/test-task-rick-and-morty/index.html",
+    "static/media/search-icon.svg": "/test-task-rick-and-morty/static/media/search-icon.5b18621a23d0b55d31d9942355fd80b2.svg",
+    "static/media/arrow_back.svg": "/test-task-rick-and-morty/static/media/arrow_back.c95902e77e37e7d6ecdbc351815018ad.svg",
+    "main.2d32976d.css.map": "/test-task-rick-and-morty/static/css/main.2d32976d.css.map",
+    "main.7fe3e86c.js.map": "/test-task-rick-and-morty/static/js/main.7fe3e86c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2d32976d.css",
+    "static/js/main.7fe3e86c.js"
+  ]
+}
