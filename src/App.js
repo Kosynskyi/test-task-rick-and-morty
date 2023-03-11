@@ -8,7 +8,7 @@ import NotFoundPage from 'pages/NotFoundPage';
 function App() {
   return (
     <Box
-      p={4}
+      p={1}
       display="flex"
       flexDirection="column"
       justifyContent="center"

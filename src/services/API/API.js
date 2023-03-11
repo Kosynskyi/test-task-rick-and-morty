@@ -29,5 +29,3 @@ export const getCharacterInfo = async id => {
     console.log(error);
   }
 };
-
-// : "https://rickandmortyapi.com/api/character/?page=2&name=${name}",
