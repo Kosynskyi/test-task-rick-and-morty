@@ -12,6 +12,7 @@ export const theme = {
     subtext: 'rgba(110, 121, 140, 1)',
     title: 'rgba(8, 31, 50, 1)',
     borderImageDetails: 'rgba(242, 242, 247, 1)',
+    buttonSignIn: 'rgb(0, 176, 200)',
   },
   space: ['auto', 0, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48],
   fonts: {
