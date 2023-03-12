@@ -48,7 +48,7 @@ export const SignInButton = styled.button`
       right: 0;
       bottom: 0;
       border-radius: 0 0 25px 0;
-      transition: 500ms;
+      transition: 1000ms;
     }
 
     &::after {
@@ -61,7 +61,7 @@ export const SignInButton = styled.button`
       top: 0;
       left: 0;
       border-radius: 25px 0 0;
-      transition: 500ms;
+      transition: 1000ms;
     }
 
     &:hover::after,

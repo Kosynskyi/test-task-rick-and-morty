@@ -41,7 +41,7 @@ export const CharacterInfoTitle = styled.h3`
     font-size: ${props => props.theme.fontSizes.xl};
     font-weight: ${props => props.theme.fontWeights.medium};
     line-height: ${props => props.theme.lineHeights.additional};
-    letter-spacing: ${props => props.theme.letterSpacing.mobile};
+    letter-spacing: ${props => props.theme.letterSpacing.primary};
     color: ${props => props.theme.colors.gray};
   }
 
@@ -60,6 +60,7 @@ export const DetailList = styled.ul`
     justify-content: center;
     padding-left: 14px;
     padding-right: 8px;
+    list-style: none;
   }
 `;
 
@@ -88,7 +89,7 @@ export const DescriptionTitle = styled.h4`
     font-size: ${props => props.theme.fontSizes.m};
     font-weight: ${props => props.theme.fontWeights.bold};
     line-height: ${props => props.theme.lineHeights.primary};
-    letter-spacing: ${props => props.theme.letterSpacing.mobile};
+    letter-spacing: ${props => props.theme.letterSpacing.primary};
     color: ${props => props.theme.colors.title};
   }
 

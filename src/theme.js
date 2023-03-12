@@ -38,7 +38,6 @@ export const theme = {
     extra: 1.43,
     additional: 1.2,
     secondary: 1.17,
-    mobile: 1.15,
   },
   letterSpacing: {
     primary: 0.15,
