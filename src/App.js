@@ -12,10 +12,6 @@ function App() {
   return (
     <Wrapper>
       <Routes>
-        {/* <Route path="/" element={<HomePage />} /> */}
-        {/* <Route path="/login" element={<SignIn />} /> */}
-        {/* <Route path="/character/:id" element={<CharacterDetailsPage />} /> */}
-
         <Route element={<PublicRoute />}>
           <Route path="/" element={<LoginPage />} />
         </Route>

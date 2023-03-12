@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useLocation, useSearchParams } from 'react-router-dom';
-import { Box } from 'utils/Box';
-import { sortedCharactersByName } from 'helpers/sortedCharacters';
-// import { BASE_URL } from 'helpers/constans';
 import { getAllCharters } from 'services/API/API';
 import { useGetCharacterByNameQuery } from 'redux/characterSlice';
-
+import { Box } from 'utils/Box';
+import { sortedCharactersByName } from 'helpers/sortedCharacters';
+import Skeleton from 'components/Skeleton';
 import {
   StyledList,
   StyledItem,
@@ -13,7 +12,6 @@ import {
   Species,
   StyledLink,
 } from './CharacterList.styled';
-import Skeleton from 'components/Skeleton';
 
 const CharacterList = () => {
   const [characters, setCharacters] = useState([]);
@@ -22,23 +20,20 @@ const CharacterList = () => {
   const query = searchParams.get('query') ?? '';
 
   // eslint-disable-next-line
-  const { data, error, isLoading } = useGetCharacterByNameQuery(query);
-  // console.log('data in list', data?.results);
-  // console.log('error', error);
+  const { data, error, isLoading, isFetching } =
+    useGetCharacterByNameQuery(query);
 
   useEffect(() => {
     if (data) {
-      // console.log(333);
       setCharacters(data?.results);
     } else {
-      // console.log('query in useEffect', query);
       getAllCharters().then(setCharacters);
     }
   }, [data, query]);
 
   return (
     <>
-      {isLoading ? (
+      {isFetching ? (
         <Skeleton />
       ) : (
         <StyledList>
@@ -47,7 +42,6 @@ const CharacterList = () => {
               ({ id, name, image, species }) => (
                 <StyledItem key={id}>
                   <StyledLink
-                    // to={`${BASE_URL}${id}`}
                     to={`/character/${id}`}
                     state={{ from: location }}
                   >

@@ -1,8 +1,9 @@
+import { useSearchParams } from 'react-router-dom';
+import { useGetCharacterByNameQuery } from 'redux/characterSlice';
 import Filter from 'components/Filter';
 import CharacterList from 'components/CharacterList';
 import Logo from 'components/Logo';
-import { useSearchParams } from 'react-router-dom';
-import { useGetCharacterByNameQuery } from 'redux/characterSlice';
+import LogOut from 'components/LogOut';
 import NothingFound from 'components/NothingFound';
 import { Wrapper } from './HomePage.styled';
 
@@ -15,6 +16,7 @@ const HomePage = () => {
   return (
     <>
       <Wrapper>
+        <LogOut />
         <Logo />
         <Filter />
         {error?.status === 404 ? <NothingFound /> : <CharacterList />}
