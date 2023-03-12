@@ -1,8 +1,8 @@
 {
   "name": "test-task-rick-and-morty",
-  "homepage": "https://kosynskyi.github.io/test-task-rick-and-morty",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kosynskyi.github.io/test-task-rick-and-morty/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
     "@testing-library/jest-dom": "^5.16.5",
