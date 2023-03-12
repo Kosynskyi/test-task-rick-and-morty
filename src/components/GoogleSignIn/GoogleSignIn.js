@@ -37,7 +37,7 @@ const SignIn = () => {
           <Box mb={8}>
             <Logo />
           </Box>
-          <SignInButton onClick={handleClick}>
+          <SignInButton aria-label="Log in" onClick={handleClick}>
             Sign in with <GoogleIcon />
           </SignInButton>
         </Box>

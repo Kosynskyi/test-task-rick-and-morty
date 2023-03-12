@@ -52,6 +52,36 @@ export const CharacterInfoTitle = styled.h3`
   }
 `;
 
+export const DetailList = styled.ul`
+  @media ${breakpoints.mobile} {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 14px;
+    padding-right: 8px;
+  }
+`;
+
+export const DetailElement = styled.li`
+  @media ${breakpoints.mobile} {
+    padding-top: ${props => props.theme.space[4]}px;
+    padding-bottom: ${props => props.theme.space[4]}px;
+    border-bottom: ${props => props.theme.borders.normal};
+    border-color: rgba(0, 0, 0, 0.25);
+
+    width: 312px;
+  }
+
+  @media ${breakpoints.desktop} {
+    width: 413px;
+    padding-left: ${props => props.theme.space[1]}px;
+    padding-right: ${props => props.theme.space[1]}px;
+    padding-top: 9px;
+    padding-bottom: ${props => props.theme.space[4]}px;
+  }
+`;
+
 export const DescriptionTitle = styled.h4`
   @media ${breakpoints.mobile} {
     margin-bottom: ${props => props.theme.space[1]}px;
@@ -78,25 +108,6 @@ export const CharacterInfo = styled.p`
   text-align: left;
 `;
 
-export const InfoElementWrapper = styled.div`
-  @media ${breakpoints.mobile} {
-    padding-top: ${props => props.theme.space[4]}px;
-    padding-bottom: ${props => props.theme.space[4]}px;
-    border-bottom: ${props => props.theme.borders.normal};
-    border-color: rgba(0, 0, 0, 0.25);
-
-    width: 312px;
-  }
-
-  @media ${breakpoints.desktop} {
-    width: 413px;
-    padding-left: ${props => props.theme.space[1]}px;
-    padding-right: ${props => props.theme.space[1]}px;
-    padding-top: 9px;
-    padding-bottom: ${props => props.theme.space[4]}px;
-  }
-`;
-
 export const Wrapper = styled.div`
   @media ${breakpoints.mobile} {
     margin-left: auto;
@@ -106,19 +117,5 @@ export const Wrapper = styled.div`
 
   @media ${breakpoints.desktop} {
     width: 500px;
-  }
-`;
-
-export const Thumb = styled.div`
-  @media ${breakpoints.mobile} {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-left: 14px;
-    padding-right: 8px;
-  }
-
-  @media ${breakpoints.desktop} {
   }
 `;

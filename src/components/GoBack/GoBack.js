@@ -8,7 +8,7 @@ const GoBack = () => {
 
   return (
     <Wrapper>
-      <GoBackLink to={backLinkHref}>
+      <GoBackLink aria-label="go back" to={backLinkHref}>
         <GoBackIcon /> <GoBackText>go back</GoBackText>
       </GoBackLink>
     </Wrapper>

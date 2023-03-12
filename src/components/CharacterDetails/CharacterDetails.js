@@ -9,8 +9,8 @@ import {
   CharacterInfoTitle,
   DescriptionTitle,
   CharacterInfo,
-  InfoElementWrapper,
-  Thumb,
+  DetailElement,
+  DetailList,
 } from './CharacterDetails.styled';
 
 const CharacterDetails = () => {
@@ -18,13 +18,10 @@ const CharacterDetails = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    console.log('in in useEffect', id);
     getCharacterInfo(id).then(setCharacter);
   }, [id]);
 
   if (!character) return;
-
-  console.log('character', character);
 
   const { image, name, gender, status, species, origin, type } = character;
 
@@ -34,28 +31,28 @@ const CharacterDetails = () => {
       <CharacterName>{placeholderMissingInfo(name)}</CharacterName>
       <CharacterInfoTitle>Informations</CharacterInfoTitle>
 
-      <Thumb>
-        <InfoElementWrapper>
+      <DetailList>
+        <DetailElement>
           <DescriptionTitle>Gender</DescriptionTitle>
           <CharacterInfo>{placeholderMissingInfo(gender)}</CharacterInfo>
-        </InfoElementWrapper>
-        <InfoElementWrapper>
+        </DetailElement>
+        <DetailElement>
           <DescriptionTitle>Status</DescriptionTitle>
           <CharacterInfo>{placeholderMissingInfo(status)}</CharacterInfo>
-        </InfoElementWrapper>
-        <InfoElementWrapper>
+        </DetailElement>
+        <DetailElement>
           <DescriptionTitle>Specie</DescriptionTitle>
           <CharacterInfo>{placeholderMissingInfo(species)}</CharacterInfo>
-        </InfoElementWrapper>
-        <InfoElementWrapper>
+        </DetailElement>
+        <DetailElement>
           <DescriptionTitle>Origin</DescriptionTitle>
           <CharacterInfo>{placeholderMissingInfo(origin.name)}</CharacterInfo>
-        </InfoElementWrapper>
-        <InfoElementWrapper>
+        </DetailElement>
+        <DetailElement>
           <DescriptionTitle>Type</DescriptionTitle>
           <CharacterInfo>{placeholderMissingInfo(type)}</CharacterInfo>
-        </InfoElementWrapper>
-      </Thumb>
+        </DetailElement>
+      </DetailList>
     </Wrapper>
   );
 };

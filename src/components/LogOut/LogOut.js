@@ -9,7 +9,7 @@ const LogOut = () => {
 
   return (
     <>
-      <LogOutButton onClick={logOut}>
+      <LogOutButton aria-label="Log out" onClick={logOut}>
         <LogOutIcon />
       </LogOutButton>
     </>
