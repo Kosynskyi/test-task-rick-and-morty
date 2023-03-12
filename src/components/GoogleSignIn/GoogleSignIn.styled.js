@@ -1,6 +1,15 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { breakpoints } from 'services/mixins/mixins';
 import { ReactComponent as Icon } from 'assets/google.svg';
+
+const GoogleIconRotate = keyframes`
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+`;
 
 export const SignInButton = styled.button`
   @media ${breakpoints.mobile} {
@@ -18,7 +27,7 @@ export const SignInButton = styled.button`
     line-height: ${props => props.theme.lineHeights.primary};
     color: ${props => props.theme.colors.buttonSignIn};
     border: ${props => props.theme.borders.none};
-    border-radius: ${props => props.theme.radii.primary};
+    border-radius: ${props => props.theme.radii.effect};
     transition: 500ms;
     cursor: pointer;
 
@@ -38,7 +47,7 @@ export const SignInButton = styled.button`
       border-bottom: 2px solid rgb(0, 63, 72);
       right: 0;
       bottom: 0;
-      border-radius: 0 0 5px 0;
+      border-radius: 0 0 25px 0;
       transition: 500ms;
     }
 
@@ -51,7 +60,7 @@ export const SignInButton = styled.button`
       border-top: 2px solid rgb(0, 63, 72);
       top: 0;
       left: 0;
-      border-radius: 5px 0;
+      border-radius: 25px 0 0;
       transition: 500ms;
     }
 
@@ -59,7 +68,11 @@ export const SignInButton = styled.button`
     &:hover::before {
       width: calc(100% - 2px);
       height: calc(100% - 2px);
-      border-radius: ${props => props.theme.radii.primary};
+      border-radius: ${props => props.theme.radii.effect};
+    }
+
+    &:hover > svg {
+      animation: 1500ms ${GoogleIconRotate} ease-in;
     }
   }
 

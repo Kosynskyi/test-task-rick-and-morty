@@ -53,6 +53,7 @@ export const theme = {
     none: '0',
     secondary: '4px',
     primary: '8px',
+    effect: '25px',
     round: '50%',
   },
   boxShadow: {
