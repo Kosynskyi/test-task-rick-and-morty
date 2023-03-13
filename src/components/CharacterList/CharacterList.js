@@ -67,7 +67,10 @@ const CharacterList = () => {
             ))}
         </StyledList>
       )}
-      <Pagination actualPage={actualPage} totalPage={totalPage} page={page} />
+
+      {!query && (
+        <Pagination actualPage={actualPage} totalPage={totalPage} page={page} />
+      )}
     </>
   );
 };
