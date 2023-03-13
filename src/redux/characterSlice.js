@@ -6,13 +6,19 @@ export const characterApi = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: BASE_URL }),
   endpoints: builder => ({
     getAllCharters: builder.query({
-      query: (page = 1) => `?page=${page}`,
+      query: (page = 1) => `/character/?page=${page}`,
     }),
     getCharacterByName: builder.query({
-      query: (name, page = 1) => `?page=${page}&name=${name}`,
+      query: (name, page = 1) => `/character/?page=${page}&name=${name}`,
+    }),
+    getCharacterInfo: builder.query({
+      query: id => `/character/${id}`,
     }),
   }),
 });
 
-export const { useGetAllChartersQuery, useGetCharacterByNameQuery } =
-  characterApi;
+export const {
+  useGetAllChartersQuery,
+  useGetCharacterByNameQuery,
+  useGetCharacterInfoQuery,
+} = characterApi;

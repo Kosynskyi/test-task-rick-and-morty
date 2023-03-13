@@ -7,8 +7,6 @@ const Pagination = ({ actualPage, totalPage, page }) => {
     localStorage.setItem('page', event.selected + 1);
   };
 
-  console.log(page);
-
   return (
     <Box mt={6}>
       <PaginateList
