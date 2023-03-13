@@ -7,6 +7,7 @@ import {
 import { Box } from 'utils/Box';
 import { sortedCharactersByName } from 'helpers/sortedCharacters';
 import Skeleton from 'components/Skeleton';
+import Error from 'components/Error';
 import Pagination from 'components/Pagination';
 import {
   StyledList,
@@ -32,6 +33,7 @@ const CharacterList = () => {
   const totalPage = allCharacters?.data?.info?.pages;
   const loadingIndicator =
     allCharacters.isFetching || charactersByName.isFetching;
+  const indicatorError = allCharacters.isError || charactersByName.isError;
 
   const actualPage = selectedPage => {
     setPage(Number(selectedPage));
@@ -49,6 +51,7 @@ const CharacterList = () => {
 
   return (
     <>
+      {indicatorError && <Error />}
       {loadingIndicator ? (
         <Skeleton />
       ) : (

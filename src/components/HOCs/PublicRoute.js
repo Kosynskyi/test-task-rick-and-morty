@@ -6,7 +6,7 @@ const PublicRoute = () => {
   const auth = localStorage.getItem('email');
 
   return auth ? (
-    <Navigate to="/home" />
+    <Navigate to="/characters" />
   ) : (
     <Suspense fallback={<Skeleton />}>
       <Outlet />

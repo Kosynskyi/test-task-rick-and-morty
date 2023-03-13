@@ -23,7 +23,7 @@ const SignIn = () => {
   return (
     <>
       {user ? (
-        <Navigate to="/home" />
+        <Navigate to="/characters" />
       ) : (
         <Box
           display="flex"

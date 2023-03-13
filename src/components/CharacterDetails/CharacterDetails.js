@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useGetCharacterInfoQuery } from 'redux/characterSlice';
 import Skeleton from 'components/Skeleton';
+import Error from 'components/Error';
 import { placeholderMissingInfo } from 'helpers/placeholderMissingInfo';
 import {
   Wrapper,
@@ -26,6 +27,7 @@ const CharacterDetails = () => {
 
   return (
     <>
+      {isError && <Error />}
       {isLoading ? (
         <Skeleton />
       ) : (
