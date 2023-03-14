@@ -1,4 +1,3 @@
-import React from 'react';
 import { LogOutButton, LogOutIcon } from './LogOut.styled';
 
 const LogOut = () => {

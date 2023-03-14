@@ -1,4 +1,3 @@
-import React from 'react';
 import { useState, useEffect } from 'react';
 import { MdArrowUpward } from 'react-icons/md';
 import { BackToTopButton } from './BackToTop.styled';

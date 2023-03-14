@@ -1,9 +1,8 @@
-import React from 'react';
 import { FcHome } from 'react-icons/fc';
 import { Box } from 'utils/Box';
 import { StyledBackHome, TextInfo } from './NotFoundPage.styled';
 
-const NotFound = () => {
+const NotFoundPage = () => {
   return (
     <Box
       display="flex"
@@ -22,4 +21,4 @@ const NotFound = () => {
   );
 };
 
-export default NotFound;
+export default NotFoundPage;

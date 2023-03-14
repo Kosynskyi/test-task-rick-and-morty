@@ -1,4 +1,3 @@
-import React from 'react';
 import logo_desktop_1x from 'assets/logo_desktop_1x.png';
 import logo_desktop_2x from 'assets/logo_desktop_2x.png';
 import logo_mobile_1x from 'assets/logo_mobile_1x.png';
