@@ -3,7 +3,7 @@ import { breakpoints } from 'services/mixins/mixins';
 
 export const CharacterPhoto = styled.img`
   @media ${breakpoints.mobile} {
-    margin-bottom: ${props => props.theme.space[9]}px;
+    margin-bottom: ${props => props.theme.space[8]}px;
     border-radius: ${props => props.theme.radii.round};
     border: ${props => props.theme.borders.large};
     border-color: ${props => props.theme.colors.borderImageDetails};
