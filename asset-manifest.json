@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/test-task-rick-and-morty/static/css/main.2d32976d.css",
-    "main.js": "/test-task-rick-and-morty/static/js/main.ab9c4643.js",
+    "main.js": "/test-task-rick-and-morty/static/js/main.fd832bc3.js",
     "static/js/133.f23a9f0f.chunk.js": "/test-task-rick-and-morty/static/js/133.f23a9f0f.chunk.js",
-    "static/js/600.c42959a6.chunk.js": "/test-task-rick-and-morty/static/js/600.c42959a6.chunk.js",
+    "static/js/600.554a85d8.chunk.js": "/test-task-rick-and-morty/static/js/600.554a85d8.chunk.js",
     "static/js/155.7c8bb34b.chunk.js": "/test-task-rick-and-morty/static/js/155.7c8bb34b.chunk.js",
     "static/js/638.bbea20cb.chunk.js": "/test-task-rick-and-morty/static/js/638.bbea20cb.chunk.js",
     "static/js/728.54b699ab.chunk.js": "/test-task-rick-and-morty/static/js/728.54b699ab.chunk.js",
@@ -16,15 +16,15 @@
     "static/media/search-icon.svg": "/test-task-rick-and-morty/static/media/search-icon.5b18621a23d0b55d31d9942355fd80b2.svg",
     "static/media/arrow_back.svg": "/test-task-rick-and-morty/static/media/arrow_back.c95902e77e37e7d6ecdbc351815018ad.svg",
     "main.2d32976d.css.map": "/test-task-rick-and-morty/static/css/main.2d32976d.css.map",
-    "main.ab9c4643.js.map": "/test-task-rick-and-morty/static/js/main.ab9c4643.js.map",
+    "main.fd832bc3.js.map": "/test-task-rick-and-morty/static/js/main.fd832bc3.js.map",
     "133.f23a9f0f.chunk.js.map": "/test-task-rick-and-morty/static/js/133.f23a9f0f.chunk.js.map",
-    "600.c42959a6.chunk.js.map": "/test-task-rick-and-morty/static/js/600.c42959a6.chunk.js.map",
+    "600.554a85d8.chunk.js.map": "/test-task-rick-and-morty/static/js/600.554a85d8.chunk.js.map",
     "155.7c8bb34b.chunk.js.map": "/test-task-rick-and-morty/static/js/155.7c8bb34b.chunk.js.map",
     "638.bbea20cb.chunk.js.map": "/test-task-rick-and-morty/static/js/638.bbea20cb.chunk.js.map",
     "728.54b699ab.chunk.js.map": "/test-task-rick-and-morty/static/js/728.54b699ab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2d32976d.css",
-    "static/js/main.ab9c4643.js"
+    "static/js/main.fd832bc3.js"
   ]
 }
