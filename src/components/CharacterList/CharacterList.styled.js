@@ -62,3 +62,14 @@ export const Species = styled.p`
 export const StyledLink = styled(Link)`
   text-decoration: none;
 `;
+
+export const CharacterPhoto = styled.img`
+  @media ${breakpoints.mobile} {
+    height: 232px;
+    object-fit: cover;
+  }
+
+  @media ${breakpoints.desktop} {
+    height: 168px;
+  }
+`;

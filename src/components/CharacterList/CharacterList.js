@@ -15,6 +15,7 @@ import {
   CharacterName,
   Species,
   StyledLink,
+  CharacterPhoto,
 } from './CharacterList.styled';
 
 const CharacterList = () => {
@@ -60,7 +61,7 @@ const CharacterList = () => {
             sortedCharacters.map(({ id, name, image, species }) => (
               <StyledItem key={id}>
                 <StyledLink to={`/character/${id}`} state={{ from: location }}>
-                  <img src={image} alt={name} width="312px" />
+                  <CharacterPhoto src={image} alt={name} width="312px" />
                   <Box display="flex" flexDirection="column" px={5} py={4}>
                     <CharacterName>{name}</CharacterName>
                     <Species>{species}</Species>
